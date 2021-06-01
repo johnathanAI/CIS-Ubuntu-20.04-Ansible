@@ -896,6 +896,7 @@
     owner: root
     group: root
     mode: "u-x,go-wx"
+  ignore_errors: yes
   vars:
     - motd:
       - "{{ custom_motd_file_path }}"
@@ -915,6 +916,7 @@
     owner: root
     group: root
     mode: "u-x,go-wx"
+  ignore_errors: yes
   tags:
     - section1
     - level_1_server
@@ -930,6 +932,7 @@
     owner: root
     group: root
     mode: "u-x,go-wx"
+  ignore_errors: yes
   tags:
     - section1
     - level_1_server
