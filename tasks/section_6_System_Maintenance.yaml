@@ -329,7 +329,6 @@
         mode: "g-w,o-rwx"
       with_items: "{{ output_6_2_5.stdout_lines }}"
       when: "{{ output_6_2_5.stdout_lines|length > 0 }}"
-  ignore_errors: yes
   tags:
     - section6
     - level_1_server
