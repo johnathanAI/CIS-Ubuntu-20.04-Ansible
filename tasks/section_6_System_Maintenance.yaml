@@ -345,7 +345,7 @@
     - name: 6.2.6 Ensure users own their home directories | save output
       copy:
        dest: "{{ outputfiles }}/6.2.6"
-        content: "{{ output_6_2_6_list }}"
+       content: "{{ output_6_2_6_list }}"
     - name: 6.2.6 Ensure users own their home directories | fix
       file:
         path: "{{ item.split(',')[0] }}"
