@@ -322,7 +322,6 @@
       copy:
         dest: "{{ outputfiles }}/6.2.5"
         content: "{{ output_6_2_5.stdout_lines }}"
-       ignore_errors: yes
     - name: 6.2.5 Ensure users home directories permissions are 750 or more restrictive - fix
       file:
         name: "{{ item }}"
