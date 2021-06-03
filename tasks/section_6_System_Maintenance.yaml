@@ -376,6 +376,7 @@
         path: "{{ item.split()[-1] }}"
         mode: g-w,o-w
       with_items: "{{ output_6_2_7.stdout_lines }}"
+      ignore_errors: yes
       when:
         - fix_dot_file_permissions
         - output_6_2_7.stdout
