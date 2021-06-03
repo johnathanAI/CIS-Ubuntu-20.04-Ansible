@@ -354,6 +354,7 @@
         owner: "{{ item.split(',')[1] }}"
         recurse: yes
       with_items: "{{ output_6_2_6_list }}"
+      ignore_errors: yes
   tags:
     - section6
     - level_1_server
